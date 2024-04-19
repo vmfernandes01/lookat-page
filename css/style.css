@@ -6,7 +6,11 @@
     --white: #FFFFFF;
     --grey: #B6B6B6;
     --purple: #AC05C7;
-    --grey-card: #464646;
+    --light-grey: #5D5D5D;
+    --dark-grey: #2E2E2E;
+    --dark: #272428;
+    --input-bg: #121212;
+    --input-border: #6F6F6F;
 }
 
 * {
@@ -64,7 +68,7 @@ body {
 }
 
 .btn-gray{
-    background-color: #5D5D5D;
+    background-color: var(--light-grey);
     color: var(--white);
     border-width: 0;
     border-radius: 50px;
@@ -73,7 +77,7 @@ body {
 }
 
 .btn-language{
-    background-color: #2E2E2E;
+    background-color: var(--dark-grey);
     color: var(--white);
     border-width: 0;
     border-radius: 50px;
@@ -82,13 +86,13 @@ body {
 }
 
 .btn-group .show{
-    background-color: #2E2E2E !important;
+    background-color: var(--dark-grey) !important;
     color: var(--white) !important;
 }
 
 .btn-language:hover,
 .btn-language:active{
-    background-color: #2E2E2E;
+    background-color: var(--dark-grey);
     color: var(--white);
 }
 
@@ -120,7 +124,7 @@ body {
 }
 
 .btn-drop{
-    background-color: #2E2E2E !important;
+    background-color: var(--dark-grey) !important;
     border: 50px !important;
     color: var(--white) !important;
 }
@@ -184,14 +188,14 @@ nav ul a{
 
 .dropdown {
     height: 36px;
-    background-color: #2E2E2E;
+    background-color: var(--dark-grey);
     border-radius: 50px;
     margin-right: 15px;
     margin-top: 1px;
 }
 
 nav .dropdown-menu{
-    background-color: #2E2E2E !important;
+    background-color: var(--dark-grey) !important;
     
 }
 
@@ -206,7 +210,7 @@ nav ul a:hover{
 }
 
 .navbar-brand{
-    color: #FFFFFF;
+    color: var(--white);
     text-transform: uppercase;
 }
 
@@ -253,7 +257,7 @@ nav ul a:hover{
 }
 
 .services-mycard{
-    background-color: #2E2E2E;
+    background-color: var(--dark-grey);
     width: 290px;
     height: 350px;
     margin: 25px auto 0px auto;
@@ -294,8 +298,8 @@ nav ul a:hover{
     align-items: center;
     width: 250px;
     height: 300px;
-    background-color: #2E2E2E;
-    color: #FFFFFF;
+    background-color: var(--dark-grey);
+    color: var(--white);
     position: relative;
     top: 6%;
     left: 3%;
@@ -311,7 +315,7 @@ nav ul a:hover{
 
 .partners-grid{
     height: 450px !important;
-    background-color: #272428;
+    background-color: var(--dark);
     padding-top: 50px;
     margin-top: 100px;
 }
@@ -328,7 +332,7 @@ nav ul a:hover{
   .logos {
     overflow: hidden;
     padding: 40px 0;
-    background: #272428;
+    background: var(--dark);
     white-space: nowrap;
     position: relative;
   }
@@ -355,31 +359,31 @@ nav ul a:hover{
   }
 
 .contact-card{
-    background-color: #272626;
+    background-color: var(--dark);
     border-radius: 10px;
     padding: 25px;
 }
 
 form label{
-    color: #B6B6B6;
+    color: var(--grey);
 }
 
 form input,
 form select{
-    background-color: #121212;
+    background-color: var(--input-bg);
     border-radius: 50px;
-    color: #FFFFFF;
+    color: var(--white);
     padding: 5px 10px 5px 10px !important;
-    border: solid 1px #6F6F6F;
+    border: solid 1px var(--input-border);
     width: 100%;
 }
 
 form textarea{
-    background-color: #121212;
+    background-color: var(--input-bg);
     border-radius: 10px;
-    color: #FFFFFF;
+    color: var(--white);
     padding: 5px 0 5px 10px;
-    border: solid 1px #6F6F6F;
+    border: solid 1px var(--input-border);
     height: 100px;
     width: 100%;
 }
@@ -395,12 +399,12 @@ form select:focus{
     color: var(--white);
     text-transform: uppercase;
     border-width: 1px;
-    border-color: white;
+    border-color: var(--white);
     border-style: solid;
     border-left: 0;
     border-right: 0;
     padding: 15px;
-    border-color: #FF5C00;
+    border-color: var(--orange);
     overflow-x: hidden;
     border-image: linear-gradient(to right, var(--purple), var(--orange)) 1;
     transform: rotate(-5deg);
