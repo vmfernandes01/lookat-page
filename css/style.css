@@ -14,6 +14,73 @@
     --margin-top: -200px;
 }
 
+/* QUADHD+ */
+@media screen and (min-width: 1921px){
+    .img-2{
+        display: none !important;
+    }
+
+
+    .margin-top{
+        margin-top: 150px !important;
+    }
+}
+
+/* MOBILE VERSION */
+@media (pointer: coarse){
+    .nav-item{
+        margin-bottom: 5px;
+    }
+
+    .mycard{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .text {
+        margin-top: -200px; 
+        margin-bottom: 100px;
+    }
+
+    .col-sm .firstimg {
+        position: relative;
+        width: 100%;
+        top: 5px;
+        left: -200px;
+        transform: translateX(-50%);
+        transform: scale(2);
+        overflow: hidden !important;
+    }
+
+    .margin-top{
+        margin-top: 0;
+    }
+
+    #influencer-img{
+        margin-top: 50px; 
+        margin-bottom: -200px;
+        transform: scale(1.1);
+        z-index: -50000 !important;
+        overflow-x: hidden !important;
+        position: relative;
+        width: 100%;
+    }
+
+    .right{
+        margin: 25px auto 0px auto !important; 
+    }
+    
+    .left{
+        margin: 25px auto 0px auto !important;
+    }
+}
+
+
+
 .right{
     margin-left: 15% !important; 
 }
@@ -246,58 +313,7 @@ nav ul a:hover{
 }
 
 
-/* MOBILE VERSION */
-@media (pointer: coarse){
-    .nav-item{
-        margin-bottom: 5px;
-    }
 
-    .mycard{
-        width: 100%;
-        margin-bottom: 5px;
-    }
-
-    body {
-        overflow-x: hidden !important;
-    }
-
-    .text {
-        margin-top: -200px; 
-        margin-bottom: 100px;
-    }
-
-    .col-sm .firstimg {
-        position: relative;
-        width: 100%;
-        top: 5px;
-        left: -200px;
-        transform: translateX(-50%);
-        transform: scale(2);
-        overflow: hidden !important;
-    }
-
-    .margin-top{
-        margin-top: 0;
-    }
-
-    #influencer-img{
-        margin-top: 50px; 
-        margin-bottom: -200px;
-        transform: scale(1.1);
-        z-index: -50000 !important;
-        overflow-x: hidden !important;
-        position: relative;
-        width: 100%;
-    }
-
-    .right{
-        margin: 25px auto 0px auto !important; 
-    }
-    
-    .left{
-        margin: 25px auto 0px auto !important;
-    }
-}
 
 .navbar-toggler:active,
 .navbar-toggler:focus{
