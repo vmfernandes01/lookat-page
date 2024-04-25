@@ -20,9 +20,18 @@
         display: none !important;
     }
 
-
     .margin-top{
         margin-top: 150px !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .right{
+        margin-left: 15% !important; 
+    }
+    
+    .left{
+        margin-right: 15% !important;
     }
 }
 
@@ -42,22 +51,22 @@
     }
 
     .text {
-        margin-top: -200px; 
+        margin-top: -200px !important; 
         margin-bottom: 100px;
     }
 
     .col-sm .firstimg {
         position: relative;
         width: 100%;
-        top: 5px;
-        left: -200px;
+        top: 50px !important;
+        left: -215px !important;
         transform: translateX(-50%);
         transform: scale(2);
         overflow: hidden !important;
     }
 
     .margin-top{
-        margin-top: 0;
+        margin-top: 0 !important;
     }
 
     #influencer-img{
@@ -71,22 +80,18 @@
     }
 
     .right{
-        margin: 25px auto 0px auto !important; 
+        margin-left: auto !important; 
     }
     
     .left{
-        margin: 25px auto 0px auto !important;
+        margin-right: auto !important;
     }
 }
 
 
 
-.right{
-    margin-left: 15% !important; 
-}
-
-.left{
-    margin-right: 15% !important;
+.mb-4{ 
+    margin-bottom: 0 !important;
 }
 
 * {
@@ -346,18 +351,29 @@ nav ul a:hover{
 }
 
 .gradient-mycard{
-    background-image: linear-gradient(to top right, var(--orange), transparent, transparent, var(--purple));
+    background-image: linear-gradient(28.23deg, #FF5D02 0.93%, #000000 54.6%, #000000 70.25%, #AE0AC8 100%);
     width: 290px;
     height: 350px;
     margin: 25px auto 0px auto;
     display: block;
 }
 
+.inside-gradient-mycard .card-body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    backdrop-filter: blur(20px); 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start;
+    flex-direction: column; 
+    text-align: left; 
+}
+
 .inside-gradient-mycard{
-    background: 
-            linear-gradient(217deg, var(--purple), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, var(--orange), rgba(0,255,0,0) 70.71%),
-            linear-gradient(-336deg, var(--black), rgba(0,0,255,0) 70.71%);
+    background: conic-gradient(from -48.06deg at 41.48% 35.9%, #FF5D02 -8.85deg, #AE0AC8 104.27deg, #2E2E2E 155.53deg, #2E2E2E 208.9deg, #000000 236.89deg, #000000 294.17deg, #FF5D02 351.15deg, #AE0AC8 464.27deg);
     max-width: 260px;
     height: 310px;
     padding: 15px 15px;
@@ -374,9 +390,14 @@ nav ul a:hover{
     display: block;
 }
 
+.gradient-mycard .card,
+.card img{
+    border-radius: 0px;
+}
+
 .card {
-    border: none;
-    align-items: center;
+    border: 0 none transparent;
+    align-items: center !important;
     width: 250px;
     height: 300px;
     background-color: var(--dark-grey);
@@ -384,7 +405,10 @@ nav ul a:hover{
     position: relative;
     top: 6%;
     left: 3%;
+    overflow: hidden;
+    clip-path: polygon(0% 20%, 20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%);
 }
+
 
 .card-title{
     text-transform: uppercase;
@@ -395,7 +419,7 @@ nav ul a:hover{
 }
 
 .card img{
-    filter: grayscale(0.6);
+    mix-blend-mode: luminosity;
 }
 
 .partners-grid{
@@ -414,34 +438,34 @@ nav ul a:hover{
     }
   }
   
-  .logos {
+.logos {
     overflow: hidden;
     padding: 40px 0;
     background: var(--dark);
     white-space: nowrap;
     position: relative;
-  }
-  
-  .logos:before,
-  .logos:after {
+}
+
+.logos:before,
+.logos:after {
     position: absolute;
     top: 0;
     width: 250px;
     height: 100%;
     content: "";
     z-index: 2;
-  }
-  
-  .logos-slide {
+}
+
+.logos-slide {
     display: inline-block;
     animation: 35s slide infinite linear;
-  }
-  
-  .logos-slide img {
+}
+
+.logos-slide img {
     max-height: 50px !important;
     margin: 0 20px;
     filter: grayscale(1);
-  }
+}
 
 .contact-card{
     background-color: var(--dark);
@@ -471,10 +495,17 @@ form textarea{
     border: solid 1px var(--input-border);
     height: 100px;
     width: 100%;
+    resize: none;
+}
+
+form select:invalid{
+    color: var(--input-border) !important;
 }
 
 form input:focus,
-form select:focus{
+form select:focus,
+form textarea:focus{
+    outline: none;
     border-color:  var(--orange) !important;
 }
 
@@ -604,8 +635,6 @@ form select:focus{
     height: 40px;
 }
 
-
-
 .language-icon:hover{
     fill: var(--orange);
 }
@@ -627,9 +656,28 @@ form select:focus{
 .text-orange{
     color: var(--orange);
     text-transform: uppercase;
+    font-size: 20px;
+    
 }
 
 #about-us{
     margin-top: 100px;
 }
 
+.gradient-bg{
+    position: absolute;
+    margin-left: -500px;
+    z-index: -1000;
+    margin-top: 100px;
+    transform: scale(1.2);
+}
+
+.gradient2-bg{
+    position: absolute;
+    margin-top: -700px;
+    margin-right: -300px;
+    right: 0;
+    z-index: -1000;
+    transform: scale(1.2);
+    overflow-y: hidden;
+}

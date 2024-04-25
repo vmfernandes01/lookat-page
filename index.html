@@ -5,8 +5,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Explore the solutions of our web3 agency, specialized in boosting crypto projects in the LATAM market. Experts in DeFi, tokens, and P2E, we offer effective influencer strategies to maximize your presence in the blockchain market.">
+
   <title>Lookat - We connect stories, build influence</title>
   <link rel="icon" type="icon" href="img/favicon.ico">
+
+  <meta name="twitter:card" content="Lookat - We connect stories, build influence">
+  <meta name="twitter:site" content="https://lookat.com.br">
+  <meta name="twitter:creator" content="Lookat">
+  <meta name="twitter:description" content="Explore the solutions of our web3 agency, specialized in boosting crypto projects in the LATAM market. Experts in DeFi, tokens, and P2E, we offer effective influencer strategies to maximize your presence in the blockchain market.">
+  <meta name="twitter:title" content="Lookat - We connect stories, build influence">
+  <meta name="twitter:image" content="https://images2.imgbox.com/3e/0c/M8dD50hI_o.png">
+
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Explore the solutions of our web3 agency, specialized in boosting crypto projects in the LATAM market. Experts in DeFi, tokens, and P2E, we offer effective influencer strategies to maximize your presence in the blockchain market.">
+  <meta property="og:title" content="Lookat - We connect stories, build influence">
+  <meta property="og:locale" content="Brazil">
+  <meta property="og:image" content="https://images2.imgbox.com/3e/0c/M8dD50hI_o.png">
+  <meta property="og:url" content="https://lookat.com.br">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -55,7 +73,7 @@
     </nav>
   </div>
 
-  <div class="container">
+  <div id="section-one" class="container">
     <div class="row align-items-center">
       <div class="col-sm">
         <img class="firstimg" src="img/02.png">
@@ -196,6 +214,7 @@
     </div>
   </div>
 
+  <img class="gradient-bg d-none d-sm-block" src="img/gradient.png">
   <div id="our-solutions" class="container" style="margin-top: 100px;">
     <div class="text-center">
       <p class="text-orange">Our solutions</p>
@@ -216,12 +235,14 @@
         </div>
       </div>
       <div class="services-mycard col-md-4 mb-4">
-        <div class="card inside-gradient-mycard">
-          <div class="card-body">
-            <h5 class="card-title">Social media</h5>
-            <p class="card-text">Social media management to enhance your online presence and engagement on top social media platforms.</p>
+
+          <div class="card inside-gradient-mycard">
+            <div class="card-body">
+              <h5 class="card-title">Social media</h5>
+              <p class="card-text">Social media management to enhance your online presence and engagement on top social media platforms.</p>
+            </div>
           </div>
-        </div>
+
         <div class="text-end">
           <span class="card-icon"></span>
         </div>  
@@ -295,6 +316,7 @@
       <div id="logos4" class="logos-slide"></div>
     </div>
   </div>
+  <img class="gradient2-bg d-none d-sm-block" src="img/gradiente2.png">
 
   <div class="container text-center" style="margin-bottom: 100px;">
     <img id="influencer-img" src="img/influencers.png" class="img-fluid mx-auto d-block ">
@@ -338,7 +360,7 @@
             <span class="card-icon"></span>
           </div>  
         </div>
-        <div class="col-sm-7">
+        <div class="col-sm-6">
           <form method="POST" action="https://formsubmit.co/de4d13068957ce3bf20979dcf419d0a0">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label><br>
@@ -350,8 +372,8 @@
             </div>
             <div class="mb-3">
               <label id="select" name="select" for="select" class="form-label">Interested Service</label><br>
-              <select id="select">
-                <option selected>Choose the solution of interest</option>
+              <select id="select" required>
+                <option value="" disabled selected>Choose the solution of interest</option>
                 <option value="1">Influencers</option>
                 <option value="2">Growth Community</option>
                 <option value="3">Social Media</option>
@@ -369,6 +391,7 @@
             </div>
           </form>
         </div>
+        <div class="col-sm-1"></div>
       </div>
     </div>
   </div>
