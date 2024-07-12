@@ -1,78 +1,43 @@
-var imageURL = [
-  'logos/cardahoy.png',
-  'logos/coinex.png',
-  'logos/shanhai.png',
-  'logos/lovelyplanet.png',
-  'logos/akiverse.png',
-  'logos/archewold.png',
-  'logos/ardoxus.png',
-  'logos/bigtime.png',
-  'logos/billionair.png',
-  'logos/brett.png',
-  'logos/chainers.png',
-  'logos/coinbase.png',
-  'logos/defi.png',
-  'logos/elixir.png',
-  'logos/bored.png',
-  'logos/hugewin.png',
-  'logos/kaspersky.png',
-  'logos/kratos.png',
-  'logos/mavia.png' 
-]
+var imageURL = ['img/partners/cardahoy.webp','img/partners/coinex.webp','img/partners/shanhai.webp','img/partners/lovelyplanet.webp','img/partners/akiverse.webp','img/partners/archewold.webp','img/partners/ardoxus.webp','img/partners/bigtime.webp','img/partners/billionair.webp','img/partners/brett.webp','img/partners/chainers.webp','img/partners/coinbase.webp','img/partners/defi.webp','img/partners/elixir.webp','img/partners/bored.webp','img/partners/hugewin.webp','img/partners/kaspersky.webp','img/partners/kratos.webp','img/partners/mavia.webp']
 
-var imageURL2 = [
-  'logos/octafx.png',
-  'logos/portalfantasy.png',
-  'logos/qtum.png',
-  'logos/quantfury.png',
-  'logos/realfevr.png',
-  'logos/mumu.webp',
-  'logos/serenityshield.png',
-  'logos/spacecatch.png',
-  'logos/stake.png',
-  'logos/sunflower.png',
-  'logos/swgt.png',
-  'logos/villagepenguin.png',   
-  'logos/wallstret.png',
-  'logos/devomon.png',
-  'logos/biga-arcade.svg',
-  'logos/metatoys.png',
-  'logos/movecon.png',
-  'logos/nide.png',
-  'logos/gamegpt.svg',
-  'logos/metacene.png',
-  'logos/metarivals.png'
-]
+var imageURL2 = ['img/partners/octafx.webp','img/partners/portalfantasy.webp','img/partners/qtum.webp','img/partners/quantfury.webp','img/partners/realfevr.webp','img/partners/mumu.webp','img/partners/serenityshield.webp','img/partners/spacecatch.webp','img/partners/stake.webp','img/partners/sunflower.webp','img/partners/swgt.webp','img/partners/villagepenguin.webp',   'img/partners/wallstret.webp','img/partners/devomon.webp','img/partners/biga-arcade.webp','img/partners/metatoys.webp','img/partners/movecon.webp','img/partners/nide.webp','img/partners/gamegpt.webp','img/partners/metacene.webp','img/partners/metarivals.webp']
 
-  // Seleciona a div onde as imagens serão adicionadas
-var gallery = document.getElementById('logos1');
-// Loop para criar e adicionar as imagens
-imageURL.forEach(function(url) {
-  // Cria um novo elemento img
-  var img = document.createElement('img');
-  // Define o atributo src com a URL da imagem
-  img.src = url;
-  // Adiciona a imagem à div gallery
-  gallery.appendChild(img);
+var imageAlt = ['Logo Cardahoy','Logo Coinex','Logo Shanhai','Logo My Lovely Planet','Logo Akiverse','Logo Archeworld','Logo Ardoxus','Logo Big Time','Logo Billionair','Logo BasedBrett','Logo Chainers','Logo Coinbase','Logo Defi','Logo Elixir','Logo Bored Army','Logo Hugewin','Logo Kaspersky','Logo Kratos','Logo Mavia']
+
+var imageAlt2 = ['Logo Octafx','Logo Portal Fantasy','Logo Qtum','Logo Quantfury','Logo RealFevr','Logo Mumu','Logo Serenity Shield','Logo Space Catch','Logo Stake','Logo Sunflower Land','Logo SWGT','Logo Village Penguin','Logo Wallstret','Logo Devomon','Logo Biga-Arcade','Logo Metatoys','Logo Movecon','Logo Nide','Logo GameGPT','Logo Metacene','Logo Metarivals']
+
+var gallery = document.getElementById('logos1'); // Seleciona a div onde as imagens serão adicionadas
+imageURL.forEach(function(url, alt) { // Loop para criar e adicionar as imagens
+  var img = document.createElement('img'); // Cria um novo elemento img
+  var alt = imageAlt[alt]; // Seta posicao do alt na img
+  img.src = url; // Define o atributo src com a URL da imagem
+  img.alt = alt; // Adiciona 'alt' nas imagens
+  gallery.appendChild(img); // Adiciona a imagem à div gallery
 })
 
 var gallery = document.getElementById('logos2');
-imageURL.forEach(function(url) {
+imageURL.forEach(function(url, alt) {
   var img = document.createElement('img');
+  var alt = imageAlt[alt];
   img.src = url;
+  img.alt = alt;
   gallery.appendChild(img);
 })
 
 var gallery = document.getElementById('logos3');
-imageURL2.forEach(function(url) {
+imageURL2.forEach(function(url, alt) {
   var img = document.createElement('img');
+  var alt = imageAlt2[alt];
   img.src = url;
+  img.alt = alt;
   gallery.appendChild(img);
 })
 
 var gallery = document.getElementById('logos4');
-imageURL2.forEach(function(url) {
+imageURL2.forEach(function(url, alt) {
   var img = document.createElement('img');
+  var alt = imageAlt2[alt];
   img.src = url;
+  img.alt = alt;
   gallery.appendChild(img);
 })

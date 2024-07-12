@@ -36,6 +36,7 @@
     
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a07e271676.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js" async></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -82,7 +83,7 @@
     <div id="section-one" class="container">
       <div class="row align-items-center">
         <div class="col-sm">
-          <img class="firstimg" src="img/02.png">
+          <img class="firstimg lazyload" data-src="img/banner01.webp" alt="Banner Lookat">
           <div class="text">
             <p class="text-orange">A Marketing agency influence</p>
             <p class="h1 text-white">We connect stories, build influence.</p>
@@ -92,7 +93,7 @@
           </div>
         </div>
         <div class="col-sm">
-          <img class="secondimg img-fluid mx-auto d-block d-none d-sm-block" src="img/second-img.png" alt="">
+          <img class="secondimg img-fluid mx-auto d-block d-none d-sm-block lazyload" data-src="img/second-img.webp" alt="Lookat's influencer numbers">
         </div>
       </div>
     </div>
@@ -113,9 +114,9 @@
         <div class="col-sm mycard">
           <div class="row align-items-center">
             <div class="col-8">
-              <p class="margin">web3 projects</p>
+              <p class="margin">crypto projects</p>
               <p>total deposited</p>
-              <p class="value">$220K</p>
+              <p class="value">$1.5B</p>
             </div>
             <div class="col-4">
               <span class="web3-icon"></span>
@@ -151,7 +152,7 @@
     <div id="about-us" class="container">
       <div class="row align-items-center">
         <div class="col-sm-4">
-          <img class="img-fluid d-none d-sm-block" src="img/Group 13901.png" />
+          <img class="img-fluid d-none d-sm-block lazyload" data-src="img/Group 13901.webp" alt="Lookat design element">
         </div>
         <div class="col-sm-8">
           <p class="text-orange">About us</p>
@@ -202,7 +203,7 @@
       </div>
       <div class="row align-items-center">
         <div class="col-sm-4 d-none d-sm-block">
-          <img class="img-3" src="img/Group 141.png" alt="">
+          <img class="img-3 lazyload" data-src="img/Group 141.webp" alt="Lookat design element">
         </div>
         <div class="col-sm-8">
           <p class="text-gray margin-top">We are passionate about creating meaningful connections between local and international projects. We believe that every brand has a unique story to tell, and it is our mission to help them share that story authentically and impactfully.</p>
@@ -211,10 +212,9 @@
           <button onclick="scrollToSection('contact-us')" class="btn btn-orange">Contact us <span class="lookat-icon"></span></button>
         </div>
       </div>
-    </div>
-    
+    </div>   
     <div id="our-solutions" class="container" style="margin-top: 100px;">
-      <img class="gradient-bg d-none d-sm-block" src="img/gradient.png">
+      <img class="gradient-bg d-none d-sm-block lazyload" data-src="img/gradient.webp" alt="Lookat design element">
       <div class="text-center">
         <p class="text-orange">Our solutions</p>
         <p class="h1 text-white">What We Do</p>
@@ -223,7 +223,7 @@
       <div class="row">
         <div class="gradient-mycard right col-md-4 mb-4">
           <div class="card">
-            <img src="img/a9a7da6b-948b-4c6b-819a-b88e17d047e5.jpeg" class="card-img-top" alt="...">
+            <img class="card-img-top lazyload" data-src="img/a9a7da6b-948b-4c6b-819a-b88e17d047e5.webp" alt="Lookat's Influencer">
             <div class="card-body">
               <h5 class="card-title">Influencer</h5>
               <p class="card-text">Connecting influential individuals to promote your brand's products or services to the audience.</p>
@@ -246,7 +246,7 @@
         </div>
         <div class="gradient-mycard left col-md-4 mb-4">
           <div class="card">
-            <img src="img/008d66a5-78cc-4aee-bb26-797cca797343.jpeg" class="card-img-top" alt="...">
+            <img class="card-img-top lazyload" data-src="img/008d66a5-78cc-4aee-bb26-797cca797343.webp" alt="Community manegement">
             <div class="card-body">
               <h5 class="card-title">Community</h5>
               <p class="card-text">We create and manage an engaged community of followers, promoting loyalty and organic growth.</p>
@@ -271,7 +271,7 @@
         </div>
         <div class="gradient-mycard col-md-4">
           <div class="card">
-            <img src="img/82075053-4b76-4e09-a9e5-b8a75370fa04.jpeg" class="card-img-top" alt="...">
+            <img class="card-img-top lazyload" data-src="img/82075053-4b76-4e09-a9e5-b8a75370fa04.webp" alt="Event">
             <div class="card-body">
               <h5 class="card-title">Events</h5>
               <p class="card-text">With customized marketing strategies, we are ready to position your project in the spotlight.</p>
@@ -313,10 +313,11 @@
       </div>
     </div>
     <div class="container text-center" style="margin-bottom: 100px;">
-      <img class="gradient2-bg d-none d-sm-block" src="img/gradiente2.png">
-      <img class="influencer-orange1 d-none d-sm-block" src="img/orange.png">
-      <img class="influencer-purple1 d-none d-sm-block" src="img/purple1.png">
-      <img id="influencer-img" src="img/influencers.png" class="img-fluid mx-auto d-block d-none d-sm-block">
+      <img class="gradient2-bg d-none d-sm-block lazyload" data-src="img/gradiente2.webp" alt="Lookat design element" style="transform: scale(1.5);margin-left: 1200px;margin-top: -500px;">
+      <img class="influencer-orange1 d-none d-sm-block lazyload" data-src="img/orange.webp"
+      alt="Lookat design element">
+      <img class="influencer-purple1 d-none d-sm-block lazyload" data-src="img/purple1.webp" alt="Lookat design element">
+      <img id="influencer-img" class="influencer-img img-fluid mx-auto d-block d-none d-sm-block lazyload" data-src="img/influencers.webp" alt="Lookat Influencers" style="transform: scale(1.1);margin-top: 50px;margin-bottom: -300px;">
       <p class="h1 text-white">Influencers:</p>
       <p class="text-gray">Influencers are essential in marketing, expanding the reach of your project. With <span class="text-white-bold">Lookat</span>, we eliminate the challenges of finding <span class="text-white-bold">the ideal influencer, strengthening your communication.</span> We have a network of influential partners to boost your results.</p>
     </div>
@@ -327,10 +328,10 @@
     </div>
     <div id="bar" class="bar bar-border-top bar-border-bottom"></div>
     <div class="container">
-      <img class="influencer-purple2 d-none d-sm-block" src="img/purple2.png">
-      <img class="influencer-orange2 d-none d-sm-block" src="img/orange.png">  
+      <img class="influencer-purple2 d-none d-sm-block lazyload" data-src="img/purple2.webp" alt="Lookat design element">
+      <img class="influencer-orange2 d-none d-sm-block lazyload" data-src="img/orange.webp" alt="Lookat design element">  
       <div class="row">
-        <img src="img/Group 126.png" class="d-none d-sm-block" style="margin-top: -150px; margin-bottom: -150px;">
+        <img class="d-none d-sm-block lazyload" data-src="img/Group 126.webp" style="margin-top: -150px; margin-bottom: -150px;" alt="Lookat influencers">
         <div class="col-sm-4">
           <p class="text-orange">Influencers</p>
           <p class="h1 text-white">Are you an influencer in need of assistance on this journey?</p>
