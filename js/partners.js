@@ -12,6 +12,8 @@ imageURL.forEach(function(url, alt) { // Loop para criar e adicionar as imagens
   var alt = imageAlt[alt]; // Seta posicao do alt na img
   img.src = url; // Define o atributo src com a URL da imagem
   img.alt = alt; // Adiciona 'alt' nas imagens
+  img.classList.add('lazy-image');
+  img.loading = 'lazy';
   gallery.appendChild(img); // Adiciona a imagem à div gallery
 })
 
@@ -21,6 +23,8 @@ imageURL.forEach(function(url, alt) {
   var alt = imageAlt[alt];
   img.src = url;
   img.alt = alt;
+  img.classList.add('lazy-image');
+  img.loading = 'lazy';
   gallery.appendChild(img);
 })
 
@@ -30,6 +34,8 @@ imageURL2.forEach(function(url, alt) {
   var alt = imageAlt2[alt];
   img.src = url;
   img.alt = alt;
+  img.classList.add('lazy-image');
+  img.loading = 'lazy';
   gallery.appendChild(img);
 })
 
@@ -39,5 +45,7 @@ imageURL2.forEach(function(url, alt) {
   var alt = imageAlt2[alt];
   img.src = url;
   img.alt = alt;
+  img.classList.add('lazy-image');
+  img.loading = 'lazy';
   gallery.appendChild(img);
 })

@@ -223,25 +223,6 @@ nav .btn-transparent:hover {
   transition: 0.2s;
 }
 
-.mycard p {
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-}
-
-#mycard {
-  margin: 0 5px;
-}
-
-.mycard {
-  background-color: rgba(70, 70, 70, 0.65);
-  width: 100%;
-  border-radius: 6px;
-  margin: 5px;
-  padding: 20px 20px 20px 20px;
-  z-index: 100;
-  overflow-x: hidden;
-}
-
 .margin {
   margin-bottom: -3px;
   font-weight: bold;
