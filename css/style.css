@@ -68,7 +68,7 @@
   .margin-top {
     margin-top: 0 !important;
   }
-  
+
   .right {
     margin-left: auto !important;
   }
@@ -416,6 +416,11 @@ nav ul a:hover {
   background-color: var(--dark);
   padding-top: 50px;
   margin-top: 100px;
+}
+
+.partners-grid img{
+  height: auto;
+  width: auto;
 }
 
 @keyframes slide {
