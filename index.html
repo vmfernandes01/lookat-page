@@ -3,6 +3,25 @@
   <head>
 
     <style>
+
+.mycard p {
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+      }
+
+      #mycard {
+        margin: 0 5px;
+      }
+
+      .mycard {
+        background-color: rgba(70, 70, 70, 0.65);
+        width: 100%;
+        border-radius: 6px;
+        margin: 5px;
+        padding: 20px 20px 20px 20px !important;
+        z-index: 100;
+        overflow-x: hidden;
+      }
       @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Single+Day&display=swap');
 
       @media (pointer: coarse) {
@@ -17,24 +36,7 @@
         }
       }
 
-      .mycard p {
-        color: rgba(255, 255, 255, 1);
-        text-transform: uppercase;
-      }
-
-      #mycard {
-        margin: 0 5px;
-      }
-
-      .mycard {
-        background-color: rgba(70, 70, 70, 0.65);
-        width: 100%;
-        border-radius: 6px;
-        margin: 5px;
-        padding: 20px 20px 20px 20px;
-        z-index: 100;
-        overflow-x: hidden;
-      }
+      
     </style>
     <link rel="preload" as="svg" href="img/banner01.svg">
 
@@ -132,7 +134,7 @@
           <img class="firstimg" src="img/banner01.svg" alt="Banner Lookat">
           <div class="text">
             <p class="text-orange">A Marketing agency influence</p>
-            <p class="h1 text-white">We connect stories, build influence.</p>
+            <p class="h1 text-white" style="font-weight: 500 !important;">We connect stories, build influence.</p>
             <p class="text-gray">We generate engagement, closeness, and connection.</p>
             <a href="#contact-us" class="btn btn-orange">Contact us <span class="lookat-icon"></span></a>
             <a href="#our-solutions" class="btn btn-transparent">Our solutions</a>
@@ -388,7 +390,7 @@
         </div>
       </div>
     </div>
-    <div id="#contact-us" class="container" style="padding-top: 100px;">
+    <div id="contact-us" class="container" style="padding-top: 100px;">
       <div class="contact-card">
         <div class="row">
           <div class="services-mycard col-sm-5 mb-4">
