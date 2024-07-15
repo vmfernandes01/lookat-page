@@ -73,6 +73,10 @@
   #contact-us .services-mycard {
     margin-bottom: 50px !important;
   }
+
+  #contact-us .row{
+    padding-top: 25px;
+  }
 }
 
 .mb-4 {
@@ -310,6 +314,19 @@ nav ul a:hover {
   display: block;
 }
 
+#contact-us .services-mycard {
+  width: 350px;
+  height: 420px;
+  margin-top: -25px !important;
+}
+
+#contact-us .inside-gradient-mycard{
+  width: 305px;
+  height: 370px;
+}
+
+
+
 .gradient-mycard {
   background-image: linear-gradient(28.23deg, #FF5D02 0.93%, #000000 54.6%, #000000 70.25%, #AE0AC8 100%);
   width: 290px;
@@ -334,7 +351,7 @@ nav ul a:hover {
 
 .inside-gradient-mycard {
   background: conic-gradient(from -48.06deg at 41.48% 35.9%, #FF5D02 -8.85deg, #AE0AC8 104.27deg, #2E2E2E 155.53deg, #2E2E2E 208.9deg, #000000 236.89deg, #000000 294.17deg, #FF5D02 351.15deg, #AE0AC8 464.27deg);
-  max-width: 260px;
+  width: 260px;
   height: 310px;
   padding: 15px 15px;
   color: var(--white);
@@ -371,6 +388,7 @@ nav ul a:hover {
 
 .card-title {
   text-transform: uppercase;
+  font-weight: 300 !important;
 }
 
 .card p {
@@ -641,10 +659,9 @@ form textarea:focus {
 
 .gradient2-bg {
   position: absolute;
-  margin-top: -700px;
+  margin-top: -400px !important;
   margin-left: 1100px;
   z-index: -1000;
-  transform: scale(1.2);
   overflow-y: hidden;
 }
 

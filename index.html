@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <style>
-
-.mycard p {
+      .mycard p {
         color: rgba(255, 255, 255, 1);
         text-transform: uppercase;
       }
@@ -34,9 +32,7 @@
           transform: scale(2);
           overflow: hidden !important;
         }
-      }
-
-      
+      }  
     </style>
     <link rel="preload" as="svg" href="img/banner01.svg">
 
@@ -262,7 +258,7 @@
       </div>
     </div>   
     <div id="our-solutions" class="container" style="margin-top: 100px;">
-      <img class="gradient-bg d-none d-sm-block lazyload" data-src="img/gradient.webp" alt="Lookat design element">
+      <img class="gradient-bg d-none d-sm-block" src="img/gradient.svg" alt="Lookat design element">
       <div class="text-center">
         <p class="text-orange">Our solutions</p>
         <p class="h1 text-white">What We Do</p>
@@ -361,10 +357,9 @@
       </div>
     </div>
     <div class="container text-center" style="margin-bottom: 100px;">
-      <img class="gradient2-bg d-none d-sm-block lazyload" data-src="img/gradiente2.webp" alt="Lookat design element" style="transform: scale(1.5);margin-left: 1200px;margin-top: -500px;">
-      <img class="influencer-orange1 d-none d-sm-block lazyload" data-src="img/orange.webp"
-      alt="Lookat design element">
-      <img class="influencer-purple1 d-none d-sm-block lazyload" data-src="img/purple1.webp" alt="Lookat design element">
+      <img class="gradient2-bg d-none d-sm-block lazyload" src="img/gradient.svg" alt="Lookat design element" style="transform: scale(1.5);margin-left: 1200px;margin-top: -500px;">
+      <img class="influencer-orange1 d-none d-sm-block lazyload" src="img/orange.svg" alt="Lookat design element">
+      <img class="influencer-purple1 d-none d-sm-block lazyload" src="img/purple1.svg" alt="Lookat design element">
       <img id="influencer-img" class="influencer-img img-fluid mx-auto d-block d-none d-sm-block lazyload" data-src="img/influencers.webp" alt="Lookat Influencers" style="transform: scale(1.1);margin-top: 50px;margin-bottom: -300px;">
       <p class="h1 text-white">Influencers:</p>
       <p class="text-gray">Influencers are essential in marketing, expanding the reach of your project. With <span class="text-white-bold">Lookat</span>, we eliminate the challenges of finding <span class="text-white-bold">the ideal influencer, strengthening your communication.</span> We have a network of influential partners to boost your results.</p>
@@ -376,8 +371,8 @@
     </div>
     <div id="bar" class="bar bar-border-top bar-border-bottom"></div>
     <div class="container">
-      <img class="influencer-purple2 d-none d-sm-block lazyload" data-src="img/purple2.webp" alt="Lookat design element">
-      <img class="influencer-orange2 d-none d-sm-block lazyload" data-src="img/orange.webp" alt="Lookat design element">  
+      <img class="influencer-purple2 d-none d-sm-block lazyload" src="img/purple2.svg" alt="Lookat design element">
+      <img class="influencer-orange2 d-none d-sm-block lazyload" src="img/orange.svg" alt="Lookat design element">  
       <div class="row">
         <img class="d-none d-sm-block lazyload" data-src="img/Group 126.webp" style="margin-top: -150px; margin-bottom: -150px;" alt="Lookat influencers">
         <div class="col-sm-4">
@@ -392,7 +387,7 @@
     </div>
     <div id="contact-us" class="container" style="padding-top: 100px;">
       <div class="contact-card">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="services-mycard col-sm-5 mb-4">
             <div class="card inside-gradient-mycard">
               <div class="card-body">
@@ -411,21 +406,22 @@
                 <label for="name" class="form-label">Name</label><br>
                 <input name="name" id="name" type="text" placeholder="Insert your name" required>
               </div>
+
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label><br>
                 <input name="email" id="email" type="email" placeholder="Insert your email" required>
               </div>
+
               <div class="mb-3">
-                <label id="select" name="select" for="select" class="form-label">Interested Service</label><br>
-                <select id="select" required>
-                  <option value="" disabled selected>Choose the solution of interest</option>
-                  <option value="1">Influencers</option>
-                  <option value="2">Growth Community</option>
-                  <option value="3">Social Media</option>
-                  <option value="4">Pre Sale</option>
-                  <option value="5">Pre Launch</option>
-                </select>
+                <label for="company" class="form-label">Company name</label><br>
+                <input name="company" id="company" type="text" placeholder="Insert a name" required>
               </div>
+
+              <div class="mb-3">
+                <label for="csite" class="form-label">Company site</label><br>
+                <input name="csite" id="csite" type="text" placeholder="Insert a link" required>
+              </div>
+              
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label><br>
                 <textarea name="message" id="message" type="text" rows="3" placeholder="Your message" required></textarea>
