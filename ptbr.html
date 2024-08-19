@@ -1,33 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
   <head>
+    <style>
+      .mycard p {
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+      }
+
+      #mycard {
+        margin: 0 5px;
+      }
+
+      .mycard {
+        background-color: rgba(70, 70, 70, 0.65);
+        width: 100%;
+        border-radius: 6px;
+        margin: 5px;
+        padding: 20px 20px 20px 20px !important;
+        z-index: 100;
+        overflow-x: hidden;
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Single+Day&display=swap');
+
+      @media (pointer: coarse) {
+        .col-sm .firstimg {
+          position: relative;
+          width: 100%;
+          top: 50px !important;
+          left: -215px !important;
+          transform: translateX(-50%);
+          transform: scale(2);
+          overflow: hidden !important;
+        }
+      }  
+    </style>
+    <link rel="preload" as="svg" href="img/banner01.svg">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WB6QJC37');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="facebook-domain-verification" content="yghpq1p6htlwl3ptegm77pmf2nroir" />
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the solutions of our web3 agency, specialized in boosting crypto projects in the LATAM market. Experts in DeFi, tokens, and P2E, we offer effective influencer strategies to maximize your presence in the blockchain market.">
-    <title>Lookat - Conectamos histórias, construímos influência</title>
+    <title>Lookat - We connect stories, build influence</title>
     <link rel="icon" type="icon" href="img/favicon.ico">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="Lookatbrazil">
     <meta name="twitter:url" content="https://lookat.com.br">
     <meta name="twitter:creator" content="Lookatbrazil">
-    <meta name="twitter:description" content="Explore nossas soluções especializadas em impulsionar projetos cripto no LATAM, com foco em DeFi, Tokens, P2E, Blockchain e parcerias com KOLs e influencers.">
-    <meta name="twitter:title" content="Lookat - Conectamos histórias, construímos influência">
+    <meta name="twitter:description" content="Explore our specialized solutions to boost crypto projects in LATAM, focusing on DeFi, tokens, P2E, blockchain, and partnerships with KOLs and influencers.">
+    <meta name="twitter:title" content="Lookat - We connect stories, build influence">
     <meta name="twitter:image" content="https://images2.imgbox.com/5f/66/fBMWw9sT_o.png">
     <meta property="og:type" content="website"/>
-    <meta property="og:description" content="Explore nossas soluções especializadas em impulsionar projetos cripto no LATAM, com foco em DeFi, Tokens, P2E, Blockchain e parcerias com KOLs e influencers.">
-    <meta property="og:title" content="Lookat - Conectamos histórias, construímos influência">
+    <meta property="og:description" content="Explore our specialized solutions to boost crypto projects in LATAM, focusing on DeFi, tokens, P2E, blockchain, and partnerships with KOLs and influencers.">
+    <meta property="og:title" content="Lookat - We connect stories, build influence">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:image" content="https://images2.imgbox.com/88/48/vWj6x9f5_o.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:url" content="https://lookat.com.br">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a07e271676.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet" async>
+    <script src="https://kit.fontawesome.com/a07e271676.js" crossorigin="anonymous"></script> 
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB6QJC37"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
 
     <div class="container">
       <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary">
@@ -39,13 +86,22 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <button onclick="scrollToSection('about-us')" class="btn btn-transparent">Sobre nós</button>
+                <a href="https://x.com/lookatbrazil" class="btn btn-transparent">x.</a>
               </li>
               <li class="nav-item">
-                <button onclick="scrollToSection('our-solutions')" class="btn btn-transparent">Nossas soluções</button>
+                <a href="https://www.instagram.com/lookatbrasil" class="btn btn-transparent">ig.</a>
               </li>
               <li class="nav-item">
-                <button onclick="redirectTo('https://drive.google.com/file/d/1jj-yDyaAbRiTLqHKH2_mN9ZDeigPepNA/view?usp=sharing')" class="btn btn-transparent">Nosso portfólio</button>
+                <a href="https://www.linkedin.com/company/lookatbrasil" class="btn btn-transparent">in.</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about-us" class="btn btn-transparent">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a href="#our-solutions" class="btn btn-transparent">Nossas soluções</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://drive.google.com/file/d/1jj-yDyaAbRiTLqHKH2_mN9ZDeigPepNA/view?usp=sharing" class="btn btn-transparent">Nosso portfólio</a>
               </li>
               <li class="nav-item">
                 <div class="btn-group">
@@ -58,27 +114,29 @@
                 </div>
               </li>
               <li>
-                <button onclick="scrollToSection('contact-us')" class="btn btn-gradient">Contate-nos <span class="lookat-icon"></span></button>
+                <a href="#contact-us" class="btn btn-gradient">Contate-nos <span class="lookat-icon"></span></a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
+    
     <div id="section-one" class="container">
       <div class="row align-items-center">
         <div class="col-sm">
-          <img class="firstimg" src="img/02.png">
+          
+          <img class="firstimg" src="img/banner01.svg" alt="Banner Lookat">
           <div class="text">
-            <p class="text-orange">Agência de Marketing de Influência</p>
-            <p class="h1 text-white">Conectamos histórias, construímos influência.</p>
-            <p class="text-gray">Nós geramos engajamento, proximidade e conexão.</p>
-            <button onclick="scrollToSection('contact-us')" class="btn btn-orange">Contate-nos <span class="lookat-icon"></span></button>
-            <button onclick="scrollToSection('our-solutions')" class="btn btn-transparent">Nossas soluções</button>
+            <p class="text-orange">A Marketing agency influence</p>
+            <p class="h1 text-white" style="font-weight: 500 !important;">Nós conectamos histórias, construímos influência</p>
+            <p class="text-gray">Geramos engajamento, proximidade e conexão.</p>
+            <a href="#contact-us" class="btn btn-orange">Contate-nos <span class="lookat-icon"></span></a>
+            <a href="#our-solutions" class="btn btn-transparent">Nossas soluções</a>
           </div>
         </div>
         <div class="col-sm">
-          <img class="secondimg img-fluid mx-auto d-block d-none d-sm-block" src="img/second-img.png" alt="">
+          <img class="secondimg img-fluid mx-auto d-block d-none d-sm-block lazyload" data-src="img/second-img.webp" alt="Lookat's influencer numbers">
         </div>
       </div>
     </div>
@@ -87,8 +145,8 @@
         <div class="col-sm mycard">
           <div class="row align-items-center">
             <div class="col-8">
-              <p class="margin">Jogos</p>
-              <p>Total Depositado</p>
+              <p class="margin">jogos</p>
+              <p>total depositado</p>
               <p class="value">$2.8M</p>
             </div>
             <div class="col-4">
@@ -99,9 +157,9 @@
         <div class="col-sm mycard">
           <div class="row align-items-center">
             <div class="col-8">
-              <p class="margin">Projetos web3</p>
-              <p>Total Depositado</p>
-              <p class="value">$220K</p>
+              <p class="margin">projetos crypto</p>
+              <p>total depositado</p>
+              <p class="value">$1.5B</p>
             </div>
             <div class="col-4">
               <span class="web3-icon"></span>
@@ -111,8 +169,8 @@
         <div class="col-sm mycard">
           <div class="row align-items-center">
             <div class="col-8">
-              <p class="margin">Cassinos</p>
-              <p>Total Depositado</p>
+              <p class="margin">cassinos</p>
+              <p>total depositado</p>
               <p class="value">$1.3M</p>
             </div>
             <div class="col-4">
@@ -124,7 +182,7 @@
           <div class="row align-items-center">
             <div class="col-8">
               <p class="margin">Outros</p>
-              <p>Total Depositado</p>
+              <p>total depositado</p>
               <p class="value">$170k</p>
             </div>
             <div class="col-4">
@@ -137,7 +195,7 @@
     <div id="about-us" class="container">
       <div class="row align-items-center">
         <div class="col-sm-4">
-          <img class="img-fluid d-none d-sm-block" src="img/Group 13901.png" />
+          <img class="img-fluid d-none d-sm-block lazyload" data-src="img/Group 13901.svg" alt="Lookat design element">
         </div>
         <div class="col-sm-8">
           <p class="text-orange">Sobre nós</p>
@@ -188,18 +246,18 @@
       </div>
       <div class="row align-items-center">
         <div class="col-sm-4 d-none d-sm-block">
-          <img class="img-3" src="img/Group 141.png" alt="">
+          <img class="img-3 lazyload" data-src="img/Group 141.svg" alt="Lookat design element">
         </div>
         <div class="col-sm-8">
           <p class="text-gray margin-top">Somos apaixonados por criar conexões significativas entre projetos locais e internacionais. Acreditamos que cada marca tem uma história única para contar, e é nossa missão ajudá-las a compartilhar essa história de forma autêntica e impactante.</p>
-          <p class="text-gray">Se você está procurando uma parceria sólida e orientada para resultados, a Lookat está aqui para te ajudar. Entre em contato conosco hoje mesmo para saber como podemos colaborar para levar sua marca ao próximo nível.
-          </p><p class="text-white-bold">Juntos, podemos construir algo verdadeiramente extraordinário.</p>
-          <button onclick="scrollToSection('contact-us')" class="btn btn-orange">Contate-nos <span class="lookat-icon"></span></button>
+          <p class="text-gray">Se você está procurando uma parceria sólida e orientada para resultados, a Lookat está aqui para te ajudar. Entre em contato conosco hoje mesmo para saber como podemos colaborar para levar sua marca ao próximo nível.</p>
+          <p class="text-white-bold">Juntos, podemos construir algo verdadeiramente extraordinário.</p>
+          <a href="#contact-us" class="btn btn-orange">Contate-nos <span class="lookat-icon"></span></a>
         </div>
       </div>
-    </div>
+    </div>   
     <div id="our-solutions" class="container" style="margin-top: 100px;">
-      <img class="gradient-bg d-none d-sm-block" src="img/gradient.png">
+      <img class="gradient-bg d-none d-sm-block" src="img/gradient.svg" alt="Lookat design element">
       <div class="text-center">
         <p class="text-orange">Nossas soluções</p>
         <p class="h1 text-white">O que fazemos</p>
@@ -208,10 +266,10 @@
       <div class="row">
         <div class="gradient-mycard right col-md-4 mb-4">
           <div class="card">
-            <img src="img/a9a7da6b-948b-4c6b-819a-b88e17d047e5.jpeg" class="card-img-top" alt="...">
+            <img class="card-img-top lazyload" data-src="img/a9a7da6b-948b-4c6b-819a-b88e17d047e5.webp" alt="Lookat's Influencer">
             <div class="card-body">
               <h5 class="card-title">Influencer</h5>
-              <p class="card-text">Conectando pessoas influentes para promover os produtos ou serviços de sua marca para o público.</p>
+              <p class="card-text">Conectando pessoas influentes para promover os produtos ou serviços de sua marca para o público</p>
             </div>
           </div>
           <div class="text-end">
@@ -231,7 +289,7 @@
         </div>
         <div class="gradient-mycard left col-md-4 mb-4">
           <div class="card">
-            <img src="img/008d66a5-78cc-4aee-bb26-797cca797343.jpeg" class="card-img-top" alt="...">
+            <img class="card-img-top lazyload" data-src="img/008d66a5-78cc-4aee-bb26-797cca797343.webp" alt="Community manegement">
             <div class="card-body">
               <h5 class="card-title">Comunidade</h5>
               <p class="card-text">Criamos e gerenciamos uma comunidade engajada de seguidores, promovendo lealdade e crescimento orgânico.</p>
@@ -256,7 +314,7 @@
         </div>
         <div class="gradient-mycard col-md-4">
           <div class="card">
-            <img src="img/82075053-4b76-4e09-a9e5-b8a75370fa04.jpeg" class="card-img-top" alt="...">
+            <img class="card-img-top lazyload" data-src="img/82075053-4b76-4e09-a9e5-b8a75370fa04.webp" alt="Event">
             <div class="card-body">
               <h5 class="card-title">Eventos</h5>
               <p class="card-text">Com estratégias de marketing personalizadas, estamos prontos para posicionar seu projeto em destaque.</p>
@@ -279,13 +337,13 @@
         </div>
       </div>
       <div class="text-center" style="padding-top: 50px;">
-        <p class="text-gray">Permita que a Lookat faça o seu projeto se tornar conhecido! Sabemos exatamente o que fazer e quando fazer. <span class="text-white-bold">Cada ação será um passo calculado em direção ao seu sucesso.</span></p>
-        <button onclick="scrollToSection('contact-us')" class="btn btn-orange">CContate-nos <span class="lookat-icon"></span></button>
+        <p class="text-gray">Permita que a Lookat faça o seu projeto se tornar conhecido! Sabemos exatamente o que fazer e quando fazer. Cada ação será um passo calculado em direção ao seu sucesso.</span></p>
+        <a href="#contact-us" class="btn btn-orange">Contate-nos <span class="lookat-icon"></span></a>
       </div>
     </div>
     <div class="partners-grid">
       <div class="container">
-        <p class="text-center text-orange">Aprovado por + de 36 empresas</p>
+        <p class="text-center text-orange">Aprovado por + de 35 empresas</p>
         <p class="h1 text-center text-white">Alguns dos Nossos parceiros</p>
       </div>
       <div class="logos">
@@ -298,43 +356,43 @@
       </div>
     </div>
     <div class="container text-center" style="margin-bottom: 100px;">
-      <img class="gradient2-bg d-none d-sm-block" src="img/gradiente2.png">
-      <img class="influencer-orange1 d-none d-sm-block" src="img/orange.png">
-      <img class="influencer-purple1 d-none d-sm-block" src="img/purple1.png">
-      <img id="influencer-img" src="img/influencers.png" class="img-fluid mx-auto d-block d-none d-sm-block">
+      <img class="gradient2-bg d-none d-sm-block lazyload" src="img/gradient.svg" alt="Lookat design element" style="transform: scale(1.5);margin-left: 1200px;margin-top: -500px;">
+      <img class="influencer-orange1 d-none d-sm-block lazyload" src="img/orange.svg" alt="Lookat design element">
+      <img class="influencer-purple1 d-none d-sm-block lazyload" src="img/purple1.svg" alt="Lookat design element">
+      <img id="influencer-img" class="influencer-img img-fluid mx-auto d-block d-none d-sm-block lazyload" data-src="img/influencers.webp" alt="Lookat Influencers" style="transform: scale(1.1);margin-top: 50px;margin-bottom: -300px;">
       <p class="h1 text-white">Influenciadores:</p>
-      <p class="text-gray">Os influenciadores são essenciais no marketing, ampliando o alcance do seu projeto. Com a <span class="text-white-bold">Lookat</span>, eliminamos os desafios de encontrar <span class="text-white-bold">o influenciador ideal, fortalecendo sua comunicação.</span> Contamos com uma rede de parceiros influentes para impulsionar seus resultados.</p>
+      <p class="text-gray">Os influenciadores são essenciais no marketing, ampliando o alcance do seu projeto. Com a <span class="text-white-bold">Lookat,</span> eliminamos os desafios de encontrar <span class="text-white-bold">o influenciador ideal, fortalecendo sua comunicação.</span> Contamos com uma rede de parceiros influentes para impulsionar seus resultados.</p>
     </div>
     <div class="container">
       <p class="h1 text-center text-white">Communidade:</p>
       <p class="text-gray">Criar e gerenciar uma comunidade nem sempre é uma tarefa fácil, na Lookat cuidamos da comunidade do seu projeto trazendo <span class="text-white-bold">crescimento de forma orgânica e promovendo uma comunidade engajada!</span> Você terá alguém responsável por cuidar da comunidade do seu projeto <span class="text-white-bold">24h por dia,</span> respondendo as perguntas dos seus seguidores e atento a tudo que acontece.</p><p class="text-gray">Permita que a Lookat faça o seu projeto se tornar conhecido! Sabemos exatamente o que fazer e quando fazer. <span class="text-white-bold">Cada ação será um passo calculado em direção ao seu sucesso.</span></p>
-      <button onclick="scrollToSection('contact-us')" class="btn btn-orange">Contate-nos <span class="lookat-icon"></span></button>
+      <a href="#contact-us" class="btn btn-orange">Contate-nos <span class="lookat-icon"></span></a>
     </div>
     <div id="bar" class="bar bar-border-top bar-border-bottom"></div>
     <div class="container">
-      <img class="influencer-purple2 d-none d-sm-block" src="img/purple2.png">
-      <img class="influencer-orange2 d-none d-sm-block" src="img/orange.png">  
+      <img class="influencer-purple2 d-none d-sm-block lazyload" src="img/purple2.svg" alt="Lookat design element">
+      <img class="influencer-orange2 d-none d-sm-block lazyload" src="img/orange.svg" alt="Lookat design element">  
       <div class="row">
-        <img src="img/Group 126.png" class="d-none d-sm-block" style="margin-top: -150px; margin-bottom: -150px;">
+        <img class="d-none d-sm-block lazyload" data-src="img/Group 126.webp" style="margin-top: -150px; margin-bottom: -150px;" alt="Lookat influencers">
         <div class="col-sm-4">
           <p class="text-orange">Influenciadores</p>
-          <p class="h1 text-white">Você é um influenciador e precisa de ajuda nessa jornada?</p>
+          <p class="h1 text-white">Você é um influenciador estabelecido em busca de assistência profissional na sua jornada?</p>
         </div>
         <div class="col-sm-8">
-          <p class="text-gray"><span class="text-white-bold">A Lookat é a sua solução!</span> Influenciadores de sucesso fazem parte de agências de sucesso, então aqui é o seu lugar! Faça parte da equipe Lookat e deixe-nos ajudá-lo.</p><p class="text-gray">Somos uma agência séria, comprometida com nossos criadores de conteúdo, com o objetivo único de ajudar você a crescer e garantir parcerias incríveis! Buscamos manter a comunicação e o relacionamento sempre ativos em seu benefício. Reconhecemos o seu potencial e o que você tem de melhor, sempre encontrando espaço para melhoria e crescimento.</p><p class="text-gray">Oferecemos um pacote completo de suporte para ajudá-lo no mundo digital, incluindo gerenciamento de leads, assistência jurídica, parcerias exclusivas, suporte personalizado, rede de influenciadores e muitos outros benefícios. <span class="text-white-bold">Junte-se ao Lookat e chegue ao topo!</span></p>
-          <button onclick="scrollToSection('contact-us')" class="btn btn-orange">Contate-nos <span class="lookat-icon"></span></button>
+          <p class="text-gray"><span class="text-white-bold">Lookat é a sua solução!</span> Influenciadores bem-sucedidos fazem parte de agências de sucesso, então este é o lugar para você! Junte-se à equipe Lookat e deixe-nos ajudar você.</p><p class="text-gray">Somos uma agência séria, comprometida com nossos criadores de conteúdo, com o único objetivo de ajudá-los a crescer e garantir parcerias incríveis! Nos esforçamos para manter uma comunicação ativa e relacionamentos para o seu benefício. Reconhecemos o seu potencial e no que você se destaca, sempre encontrando espaço para melhoria e crescimento.</p><p class="text-gray">Se você já possui um público fiel e precisa de suporte profissional para gerenciar e expandir sua influência, a Lookat está aqui para ajudar.</p><p class="text-gray">Oferecemos um pacote de suporte completo para auxiliá-lo no mundo digital, incluindo gerenciamento de leads, assistência jurídica, parcerias exclusivas, suporte personalizado, rede de influenciadores e muitos outros benefícios. <span class="text-white-bold">Junte-se à Lookat e alcance o topo!</span></p>
+          <a href="#contact-us" class="btn btn-orange">Contate-nos <span class="lookat-icon"></span></a>
         </div>
       </div>
     </div>
     <div id="contact-us" class="container" style="padding-top: 100px;">
       <div class="contact-card">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="services-mycard col-sm-5 mb-4">
             <div class="card inside-gradient-mycard">
               <div class="card-body">
                 <h2 class="card-title text-white">Entre em contato</h2>
                 <p class="card-text">Fale com nosso time!</p>
-                <button onclick="redirectTo('https://wa.me/message/26OVVD24DPYPF1')" class="btn btn-gray">+55 19 99874-6047 <span class="phone-icon"></span></button>
+                <a href="https://wa.me/5519998746047?text=Ol%C3%A1%2C%20vim%20pelo%20site!%0A" class="btn btn-gray">+55 19 99874-6047 <span class="phone-icon"></span></a>
               </div>
             </div>
             <div class="text-end">
@@ -345,26 +403,27 @@
             <form method="POST" action="https://formspree.io/f/xpzvgjag">
               <div class="mb-3">
                 <label for="name" class="form-label">Nome</label><br>
-                <input name="name" id="name" type="text" placeholder="Insira seu nome" required>
+                <input name="name" id="name" type="text" placeholder="Insert your name" required>
               </div>
+
               <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label><br>
-                <input name="email" id="email" type="email" placeholder="Insira seu e-mail" required>
+                <label for="email" class="form-label">Email</label><br>
+                <input name="email" id="email" type="email" placeholder="Insert your email" required>
               </div>
+
               <div class="mb-3">
-                <label id="select" name="select" for="select" class="form-label">Serviço interessado</label><br>
-                <select id="select" required>
-                  <option value="" disabled selected>Escolha a solução de interesse</option>
-                  <option value="1">Influenciadores</option>
-                  <option value="2">Crescimento de comunidade</option>
-                  <option value="3">Social Media</option>
-                  <option value="4">Pré-venda</option>
-                  <option value="5">Pré-lançamento</option>
-                </select>
+                <label for="company" class="form-label">Nome do projeto</label><br>
+                <input name="company" id="company" type="text" placeholder="Insert a name" required>
               </div>
+
+              <div class="mb-3">
+                <label for="csite" class="form-label">Site do projeto</label><br>
+                <input name="csite" id="csite" type="text" placeholder="Insert a link" required>
+              </div>
+              
               <div class="mb-3">
                 <label for="message" class="form-label">Mensagem</label><br>
-                <textarea name="message" id="message" type="text" rows="3" placeholder="Insira sua mensagem" required></textarea>
+                <textarea name="message" id="message" type="text" rows="3" placeholder="Your message" required></textarea>
               </div>
               <div class="text-end justify-content-md-end">
                 <button class="btn btn-gradient">Enviar <span class="lookat-icon"></span></button>
@@ -375,12 +434,11 @@
         </div>
       </div>
     </div>
-    <p class="text-center text-gray" style="padding-top: 50px;">&copy; 2024 Lookat. Todos os direitos reservados</p>
+    <p class="text-center text-gray" style="padding-top: 50px;">&copy; 2024 Lookat. Todos os direitos reservados.</p>
   </body>
-  <script src="js/bar.js"></script>
-  <script src="js/partners.js"></script>
-  <script src="js/buttons.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/bar.js" defer></script>
+  <script src="js/partners.js" defer></script>
+  <script src="js/buttons.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js" async></script>
 </html>
