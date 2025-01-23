@@ -23,13 +23,21 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+.right {
+  margin-left: 15% !important;
+}
+
+.left {
+  margin-right: 15% !important;
+}
+
+@media screen and (max-width: 767px) {
   .right {
-    margin-left: 15% !important;
+    margin-left: auto !important;
   }
 
   .left {
-    margin-right: 15% !important;
+    margin-right: auto !important;
   }
 }
 
@@ -60,13 +68,7 @@
     margin-top: 0 !important;
   }
 
-  .right {
-    margin-left: auto !important;
-  }
-
-  .left {
-    margin-right: auto !important;
-  }
+  
 
   .partners-grid {
     margin-bottom: 100px;
