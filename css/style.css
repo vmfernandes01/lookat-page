@@ -692,3 +692,20 @@ form textarea:focus {
   margin-left: -350px;
 }
 
+.modal-body, 
+.modal-header, 
+.modal-footer {
+  color: var(--white);
+  background-color: var(--dark-grey);
+}
+
+.modal-header, 
+.modal-footer,
+.modal-content {
+  border-color: #212121;
+}
+
+.modal a {
+  color: var(--orange);
+  text-decoration: none;
+}
